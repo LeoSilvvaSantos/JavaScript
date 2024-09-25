@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
 </head>
+
 <body>
     
     <h2> Funções chamando funções...</h2>   
@@ -16,11 +17,22 @@
         var adriano = 26 ;
         var paulo = 32 ;
         
+        function pulaLinha() {
+            document.write ("<hr>" + "<hr>");
+        }
+
         function mostra(frase) {
-            document.write (frase + "<hr>") ;
+            document.write ("<big>" + frase + "</big>" ) ;
         }
 
         mostra(" Eu nasci em : " + (ano - 19) ) ;
+        pulaLinha() ;
+        mostra("Adriano nasceu em :" + (ano - 26) ) ;
+        pulaLinha() ;
+        mostra("Paulo nasceu em: " + (ano - 32) ) ;
+        pulaLinha() ;
+
+        console.log ("Esta mensagem aparece apenas no log") ;
 
     </script>
 
